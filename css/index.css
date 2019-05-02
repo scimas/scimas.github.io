@@ -4,6 +4,8 @@ body {
     max-width: 1080px;
 }
 
-svg text {
+svg #name {
+    font-family: 'Open Sans';
+    font-size: 50px;
     fill: skyblue;
 }
