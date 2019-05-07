@@ -1,8 +1,59 @@
+.site {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "navbar navbar navbar"
+        ". title ."
+        ". contacts ."
+        ". main .";
+}
+
+.top-bar {
+    grid-area: navbar;
+    background-color: #888888;
+    font-size: 1.2em;
+}
+
+.top-bar a:link, a:visited {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.top-bar a:hover, a:active {
+    background-color: #444444;
+}
+
+.title {
+    grid-area: title;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-family: 'Merienda', cursive;
+    font-size: 3em;
+    color: #50c0ff;
+    text-align: center;
+}
+
+.top-contacts {
+    grid-area: contacts;
+    text-align: center;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.sub-heading {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #2050a0;
+    text-align: center;
+}
+
 body {
     background-color: #222222;
-    text-align: center;
-    margin: auto;
-    max-width: 1080px;
     color: #bbbbbb;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
@@ -13,24 +64,11 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    font-family: 'Merienda', cursive;
-    font-size: 50px;
-    color: #50c0ff;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-h2 {
-    color: #2050a0;
-}
-
 a.button:link, a.button:visited {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     color: white;
-    /* background-color: #006000; */
 }
 
 a.button:hover, a.button:active {
