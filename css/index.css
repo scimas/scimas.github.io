@@ -3,13 +3,13 @@ body {
     text-align: center;
     margin: auto;
     max-width: 1080px;
-    color: white;
+    color: #bbbbbb;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
 }
 
 a {
-    color: white;
+    color: #2080d0;
     text-decoration: none;
 }
 
@@ -19,6 +19,10 @@ h1 {
     color: #50c0ff;
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+h2 {
+    color: #2050a0;
 }
 
 a.button:link, a.button:visited {
