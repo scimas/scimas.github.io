@@ -4,23 +4,49 @@ body {
     margin: auto;
     max-width: 1080px;
     color: white;
-    font-family: 'Bookman';
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
 }
 
-svg #name {
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Merienda', cursive;
     font-size: 50px;
-    font-weight: 500;
-    fill: #50c0ff;
+    color: #50c0ff;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-a:link, a:visited {
+a.button:link, a.button:visited {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     color: white;
-    background-color: #006000;
+    /* background-color: #006000; */
 }
 
-a:hover, a:active {
-    background-color: #309000;
+a.button:hover, a.button:active {
+    background-color: #444444;
+}
+
+table {
+    margin: auto;
+    text-align: left;
+}
+
+th, td {
+    padding: 5px;
+    max-width: 100%;
+}
+
+ul {
+    text-align: left;
+}
+
+li {
+    padding: 5px;
 }
