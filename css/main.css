@@ -1,0 +1,163 @@
+.site {
+    display: grid;
+    grid-template-areas: 
+        "navbar"
+        "title"
+        "main"
+        "contacts";
+}
+
+.nav-bar {
+    grid-area: navbar;
+}
+
+.contacts {
+    grid-area: contacts;
+}
+
+.main-content {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "content";
+}
+
+.title {
+    grid-area: title;
+}
+
+@media (min-width: 500px) {
+    .site {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+            "navbar navbar"
+            "contacts main";
+    }
+    .nav-bar ul {
+        display: flex;
+    }
+}
+
+@media (min-width: 700px) {
+    .site {
+        display: grid;
+        margin: auto;
+        max-width: 1080px;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+            "navbar navbar"
+            "contacts main";
+    }
+    .nav-bar ul {
+        display: flex;
+    }
+}
+
+body {
+    background-color: #222222;
+    color: #bbbbbb;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+}
+
+table {
+    margin: auto;
+}
+
+th, td {
+    padding: 5px;
+    max-width: 100%;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    background-color: #888888;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0px;
+}
+
+.nav-bar a:link {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar li:hover {
+    background-color: #444444;
+}
+
+.nav-bar a:active {
+    background-color: #444444;
+}
+
+.contacts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+    background-color: #888888;
+}
+
+.contacts a:link {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.contacts a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.contacts li:hover {
+    background-color: #444444;
+}
+
+.contacts a:active {
+    background-color: #444444;
+}
+
+.title {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-family: 'Merienda', cursive;
+    font-size: 3em;
+    color: #50c0ff;
+    text-align: center;
+}
+
+.main-content a:link {
+    text-decoration: none;
+    color: #2080d0;
+}
+
+.main-content a:visited {
+    text-decoration: none;
+    color: #2080d0;
+}
+
+#projects {
+    padding-left: 10px;
+}
+
+#projects li {
+    padding: 3px;
+}
+
+.sub-heading {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #2060b0;
+    text-align: center;
+}
