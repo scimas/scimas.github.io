@@ -27,36 +27,6 @@
     grid-area: title;
 }
 
-@media (min-width: 500px) {
-    .site {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 1fr 4fr;
-        grid-template-areas: 
-            "navbar navbar"
-            "contacts main";
-    }
-    .nav-bar ul {
-        display: flex;
-    }
-}
-
-@media (min-width: 700px) {
-    .site {
-        display: grid;
-        margin: auto;
-        max-width: 1080px;
-        grid-gap: 10px;
-        grid-template-columns: 1fr 4fr;
-        grid-template-areas: 
-            "navbar navbar"
-            "contacts main";
-    }
-    .nav-bar ul {
-        display: flex;
-    }
-}
-
 body {
     background-color: #222222;
     color: #bbbbbb;
@@ -74,15 +44,20 @@ th, td {
 }
 
 .nav-bar ul {
+    display: flex;
     list-style-type: none;
-    background-color: #888888;
-    font-size: 1.2em;
     padding: 0;
     margin: 0px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.nav-bar li {
+    display: inline-block;
+    width: 20%;
 }
 
 .nav-bar a:link {
-    display: inline-block;
     padding: 10px;
     color: white;
     text-decoration: none;
@@ -93,19 +68,24 @@ th, td {
     text-decoration: none;
 }
 
-.nav-bar li:hover {
+/* .nav-bar li:hover {
     background-color: #444444;
-}
+} */
 
 .nav-bar a:active {
     background-color: #444444;
 }
 
 .contacts ul {
+    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0px;
-    background-color: #888888;
+    text-align: center;
+}
+
+.contacts li {
+    width: 33.33%;
 }
 
 .contacts a:link {
@@ -147,11 +127,11 @@ th, td {
     color: #2080d0;
 }
 
-#projects {
+.main-list {
     padding-left: 10px;
 }
 
-#projects li {
+.main-list li {
     padding: 3px;
 }
 
@@ -160,4 +140,46 @@ th, td {
     margin-bottom: 5px;
     color: #2060b0;
     text-align: center;
+}
+
+@media (min-width: 500px) {
+    .site {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+            "navbar   navbar"
+            "contacts main";
+    }
+
+    .contacts ul {
+        display: block;
+        /* text-align: right; */
+    }
+
+    .contacts li {
+        width: unset;
+    }
+}
+
+@media (min-width: 700px) {
+    .site {
+        display: grid;
+        margin: auto;
+        max-width: 1080px;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+            "navbar   navbar"
+            "contacts main";
+    }
+
+    .contacts ul {
+        display: block;
+        /* text-align: right; */
+    }
+
+    .contacts li {
+        width: unset;
+    }
 }
