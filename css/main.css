@@ -43,6 +43,10 @@ th, td {
     max-width: 100%;
 }
 
+hr {
+    width: 100%;
+}
+
 .nav-bar ul {
     display: flex;
     list-style-type: none;
