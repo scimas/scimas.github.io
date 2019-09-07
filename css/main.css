@@ -28,7 +28,7 @@
 }
 
 body {
-    background-color: #222222;
+    background-color: black;
     color: #bbbbbb;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
@@ -52,7 +52,6 @@ hr {
     list-style-type: none;
     padding: 0;
     margin: 0px;
-    font-size: 2em;
     text-align: center;
 }
 
@@ -61,14 +60,19 @@ hr {
     width: 20%;
 }
 
+.nav-bar li:hover {
+    background-color: #444444;
+}
+
 .nav-bar a:link {
+    display: inline-block;
     padding: 10px;
-    color: white;
+    color: aqua;
     text-decoration: none;
 }
 
 .nav-bar a:visited {
-    color: white;
+    color: aqua;
     text-decoration: none;
 }
 
@@ -111,8 +115,7 @@ hr {
 .title {
     margin-top: 0px;
     margin-bottom: 5px;
-    font-family: 'Merienda', cursive;
-    font-size: 3em;
+    font-size: 2.8em;
     color: #50c0ff;
     text-align: center;
 }
